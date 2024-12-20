@@ -7,7 +7,8 @@
 - [TailwindCSS](https://tailwindcss.com/)
 - [Templ](https://templ.guide/)
 
-### Install
+### Development
 
-`go install github.com/a-h/templ/cmd/templ@latest`
-# go-htmx-alpine-starter
+- In two terminal windows
+  - `make run`
+  - `make watch-tailwind`
