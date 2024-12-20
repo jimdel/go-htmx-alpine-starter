@@ -1,0 +1,23 @@
+package ui
+
+import (
+	"github.com/jimdel/go-htmx-alpine-starter/web/views/layouts/base"
+)
+
+templ Root() {
+    <!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>Go Templ Alpine Notifications</title>
+			<script defer src="/static/alpine.min.js"></script>
+			<link href="/static/global.css" rel="stylesheet"/>
+		</head>
+        <main>
+			{ children... }
+			<p>hello</p>
+			@layout.Base()
+		</main>
+    </html>
+}
