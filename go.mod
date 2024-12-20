@@ -1,4 +1,4 @@
-module starter
+module jimdel/pkg
 
 go 1.22.2
 

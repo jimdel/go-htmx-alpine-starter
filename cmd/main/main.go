@@ -1,8 +1,6 @@
 package main
 
-import (
-	"starter/server"
-)
+import "jimdel/pkg/server"
 
 const PORT = ":3000"
 

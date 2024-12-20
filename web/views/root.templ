@@ -1,8 +1,6 @@
 package ui
 
-import (
-	"github.com/jimdel/go-htmx-alpine-starter/web/views/layouts/base"
-)
+import "jimdel/pkg/web/views/layouts"
 
 templ Root() {
     <!DOCTYPE html>
@@ -16,8 +14,9 @@ templ Root() {
 		</head>
         <main>
 			{ children... }
-			<p>hello</p>
-			@layout.Base()
+			@layouts.Base() {
+				<p>hello</p>
+			}
 		</main>
     </html>
 }

@@ -2,8 +2,9 @@ package server
 
 import (
 	"fmt"
+	ui "jimdel/pkg/web/views"
+
 	"net/http"
-	ui "starter/web/views"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
@@ -12,6 +13,7 @@ import (
 func Run(PORT string) error {
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
+	// TODO: fixme
 	r.Handle("/static/*", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
 
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
