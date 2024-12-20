@@ -9,13 +9,14 @@ templ Root() {
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<title>Go Templ Alpine Notifications</title>
-			<script defer src="/static/alpine.min.js"></script>
+			// TODO: fix me
+			// <script defer src="/static/alpine.min.js"></script>
 			<link href="/static/global.css" rel="stylesheet"/>
 		</head>
         <main>
 			{ children... }
 			@layouts.Base() {
-				<p>hello</p>
+				<p class="text-4xl">hello</p>
 			}
 		</main>
     </html>

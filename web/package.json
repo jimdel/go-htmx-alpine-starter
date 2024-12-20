@@ -4,7 +4,8 @@
   "description": "A Go, Templ, HTMX, and Alpine JS starter",
   "main": "index.js",
   "scripts": {
-    "tw": "tailwindcss -i ./global.css -o ./static/global.css"
+    "tw": "tailwindcss build -o ./static/global.css",
+    "tw-prod": "tailwindcss build -o ./static/global.css --minify"
   },
   "author": "",
   "license": "ISC",
