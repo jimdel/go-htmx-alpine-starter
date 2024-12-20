@@ -1,0 +1,9 @@
+package pages
+
+import "jimdel/pkg/web/views/helpers"
+
+templ NotFound() {
+    @helpers.HTMLWrapper(helpers.HTMLWrapperProps{Title: "Not Found"}) {
+        <h1>Not Found</h1>
+    }
+}

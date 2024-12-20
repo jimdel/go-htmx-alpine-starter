@@ -1,0 +1,9 @@
+package pages
+
+import "jimdel/pkg/web/views/helpers"
+
+templ Home() {
+    @helpers.HTMLWrapper(helpers.HTMLWrapperProps{Title: "Home"}) {
+        <h1>Home</h1>
+    }
+}

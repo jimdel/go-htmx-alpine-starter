@@ -5,5 +5,8 @@ import "jimdel/pkg/server"
 const PORT = ":3000"
 
 func main() {
-	server.Run(PORT)
+	err := server.Run(PORT)
+	if err != nil {
+		panic(err)
+	}
 }
